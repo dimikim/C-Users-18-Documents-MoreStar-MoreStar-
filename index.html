@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MoreStar</title>
+    <style>
+  h1{font-size: 36px}
+  h2{font-size: 32px}
+  h3{font-size: 28px}
+  .menu
+  {
+    background-color: black;
+    height: 100px;
+  }
+  .main
+  {
+    margin-right: 80px;
+    padding: 0px;
+  }
+.tab_1
+{
+margin: 0px;
+padding: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+top: -38px;
+background-color: black;
+color: white;
+font-size: 28px;
+border: none;
+cursor: pointer;
+}
+.tab_2
+{
+margin: 0px;
+padding: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+top: -38px;
+background-color: black;
+color: white;
+font-size: 28px;
+border: none;
+cursor: pointer;
+}
+.tab_3
+{
+margin: 0px;
+padding: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+position: relative;
+top: -38px;
+background-color: black;
+color: white;
+font-size: 28px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown
+{
+position: relative;
+display: inline-block;
+}
+
+.content
+{
+display: none;
+position: absolute;
+top: 55px;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.content a
+{
+color: black;
+opacity: 0.7;
+padding: 12px 16px;
+border: 2px solid black;
+border-bottom-color: #104070;
+text-decoration: none;
+display: block;
+}
+.content a:hover {background-color: #e5e5e5}
+
+.dropdown:hover .content
+{
+display: block;
+}
+
+.dropdown:hover .tab_1
+{
+background-color: #e02121;
+}
+.dropdown:hover .tab_2
+{
+background-color: #197db2;
+}
+.dropdown:hover .tab_3
+{
+background-color: #5d8101;
+}
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="Rendezvous_main.html" class="main"><img src="Morestar_symbol.png" width="100" height="100"></img></a>
+      <div class="dropdown">
+        <button class="tab_1">ABOUT</button>
+        <div class="content">
+          <a href="Rendezvous_Club_Introduce.html">회사 소개</a>
+          <a href="Rendezvous_Project_Introduce.html">회사 목표</a>
+          <a href="#">후원 안내</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="tab_2">GAME</button>
+        <div class="content">
+          <a href="#">APOCALYPSE</a>
+          <a href="#">미스터리타운</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="tab_3">NEWS</button>
+        <div class="content">
+          <a href="#">새 소식</a>
+          <a href="#">이벤트</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
